@@ -27,8 +27,6 @@ when "ubuntu"
 
   service 'avahi-daemon' do
     action :start
-    provider Chef::Provider::Service::Upstart
-    supports :restart => false
   end
 
   %w{ python-dbus python-avahi }.each do |pkg|
