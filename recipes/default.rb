@@ -72,7 +72,6 @@ when "ubuntu"
   end
 
   service 'avahi-publish-aliases' do
-    provider Chef::Provider::Service::Upstart
     action [:enable]
   end
 
